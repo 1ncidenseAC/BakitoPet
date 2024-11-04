@@ -32,7 +32,8 @@ export class AuthPage implements OnInit {
       }).catch(error => {
         console.log(error);
         this.utilsSvc.presentToast({
-          message:error.message,
+          // message:error.message,
+          message: 'Esa cuenta no existe o la contraseña es incorrecta.',
           duration: 2500,
           color: 'danger',
           position: 'middle',

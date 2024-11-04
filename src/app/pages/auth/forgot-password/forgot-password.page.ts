@@ -39,7 +39,8 @@ export class ForgotPasswordPage implements OnInit {
       }).catch(error => {
         console.log(error);
         this.utilsSvc.presentToast({
-          message:error.message,
+          // message:error.message,
+          message: 'No existe una cuenta con ese correo.',
           duration: 2500,
           color: 'danger',
           position: 'middle',

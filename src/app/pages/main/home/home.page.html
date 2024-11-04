@@ -1,10 +1,9 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Menu</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <a href="/auth">Volver</a>
-  <p>Aplicacion en mantenimiento :D</p>
+<app-header title="Inicio"></app-header>
+<ion-content>
+  <a href="/auth">Volver al Login</a>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
